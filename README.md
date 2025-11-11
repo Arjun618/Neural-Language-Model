@@ -178,10 +178,6 @@ Assignment_2/
 │   └── visualize.py       # Plotting and visualization
 ├── dataset/
 │   └── Pride_and_Prejudice-Jane_Austen.txt
-├── models/                # Saved model checkpoints
-│   ├── underfit/
-│   ├── overfit/
-│   └── best_fit/
 ├── plots/                 # Training curves and visualizations
 ├── logs/                  # Training logs (JSON)
 ├── requirements.txt
