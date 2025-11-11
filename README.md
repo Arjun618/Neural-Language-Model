@@ -154,6 +154,17 @@ python src/visualize.py
 
 Summary: The underfit configuration achieved the lowest test perplexity (3.72) on this evaluation run.
 
+**Caveat: Unexpected result trend**
+
+The numeric results above do not strictly follow the expected trend (i.e., `best_fit` performing best).
+
+Possible reasons why this can happen include:
+
+- **Dataset / split variability:** small differences in training/validation/test splits or leakage can change relative performance.
+- **Checkpoint selection:** using a non-representative checkpoint (e.g., early or late snapshot) may affect reported test metrics.
+- **Hyperparameter interactions:** learning rate, batch size, weight decay, and early stopping can interact in non-obvious ways and lead to unexpected behaviour.
+
+
 ### Training Curves
 
 Training and validation loss plots for all three scenarios are available in the `plots/` directory:
