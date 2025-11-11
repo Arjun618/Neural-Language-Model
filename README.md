@@ -81,9 +81,8 @@ Early stopping: patience 5
 
 ```bash
 # Clone the repository
-git clone <your-repo-url>
-cd Assignment_2
-
+git clone https://github.com/Arjun618/Neural-Language-Model
+cd Neural-Language-Model
 # Install dependencies
 pip install -r requirements.txt
 ```
@@ -237,21 +236,4 @@ Each scenario includes:
 - **Perplexity:** exp(loss) - measures model uncertainty
   - Lower is better
   - Typical range: 50-200 for good models
-
-## 🎓 Key Learnings
-
-### Underfitting
-- **Cause:** Insufficient model capacity or training
-- **Symptoms:** High training and validation loss
-- **Solution:** Increase model size or training duration
-
-### Overfitting
-- **Cause:** Model memorizes training data
-- **Symptoms:** Low training loss, high validation loss (gap)
-- **Solution:** Add regularization (dropout, weight decay, early stopping)
-
-### Best Fit
-- **Goal:** Balance between underfitting and overfitting
-- **Indicators:** Small gap between training and validation loss
-- **Techniques:** Proper regularization, appropriate model capacity
 
