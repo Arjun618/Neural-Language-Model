@@ -206,28 +206,6 @@ Each scenario includes:
 - Training logs (JSON)
 - Loss curves (PNG)
 
-### Loading a Trained Model
-
-```python
-import torch
-from src.model import create_model
-
-# Load checkpoint
-checkpoint = torch.load('models/best_fit/best_model.pt')
-config = checkpoint['config']
-
-# Create and load model
-model = create_model(
-    model_type='LSTM',
-    vocab_size=checkpoint['vocab_size'],
-    embedding_dim=config['embedding_dim'],
-    hidden_dim=config['hidden_dim'],
-    num_layers=config['num_layers'],
-    dropout=config['dropout']
-)
-model.load_state_dict(checkpoint['model_state_dict'])
-```
-
 ## 🛠️ Technical Details
 
 ### Model Architecture
@@ -265,13 +243,4 @@ model.load_state_dict(checkpoint['model_state_dict'])
 - **Goal:** Balance between underfitting and overfitting
 - **Indicators:** Small gap between training and validation loss
 - **Techniques:** Proper regularization, appropriate model capacity
-
-## 🚀 Future Improvements
-
-- [ ] Implement Transformer architecture
-- [ ] Add word-level tokenization option
-- [ ] Implement beam search for generation
-- [ ] Add attention visualization
-- [ ] Deploy interactive web demo
-- [ ] Experiment with different architectures (GRU, Bidirectional)
 
