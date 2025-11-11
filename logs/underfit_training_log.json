@@ -1,0 +1,36 @@
+{
+    "scenario": "underfit",
+    "timestamp": "2025-11-10 20:27:21",
+    "config": {
+        "name": "underfit",
+        "embedding_dim": 64,
+        "hidden_dim": 128,
+        "num_layers": 1,
+        "dropout": 0.0,
+        "learning_rate": 0.01,
+        "batch_size": 128,
+        "epochs": 5,
+        "weight_decay": 0.0,
+        "grad_clip": 5.0
+    },
+    "train_losses": [
+        1.2724951576882706,
+        1.1216145659214756,
+        1.1057873539511853,
+        1.1013801083942074,
+        1.1007330661686063
+    ],
+    "val_losses": [
+        1.3485846595545536,
+        1.363976540249372,
+        1.3688281479082733,
+        1.3747942104215516,
+        1.3770395379970508
+    ],
+    "test_loss": 1.3397310427868971,
+    "test_perplexity": 3.818016484186982,
+    "best_val_loss": 1.3485846595545536,
+    "best_val_perplexity": 3.851969822081347,
+    "final_train_loss": 1.1007330661686063,
+    "final_val_loss": 1.3770395379970508
+}

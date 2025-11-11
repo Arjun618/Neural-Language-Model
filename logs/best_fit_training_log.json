@@ -1,0 +1,39 @@
+{
+    "scenario": "best_fit",
+    "timestamp": "2025-11-10 20:58:23",
+    "config": {
+        "name": "best_fit",
+        "embedding_dim": 256,
+        "hidden_dim": 512,
+        "num_layers": 2,
+        "dropout": 0.3,
+        "learning_rate": 0.001,
+        "batch_size": 64,
+        "epochs": 30,
+        "weight_decay": 1e-05,
+        "grad_clip": 5.0,
+        "early_stopping_patience": 5
+    },
+    "train_losses": [
+        0.9887418341142854,
+        0.5973485646115549,
+        0.4986777390435979,
+        0.45343758902980874,
+        0.427027614293615,
+        0.4094096794051815
+    ],
+    "val_losses": [
+        1.5239858573737974,
+        1.816768824352068,
+        1.9283639080245083,
+        1.9901829206344879,
+        2.06420140301893,
+        2.1110103845005073
+    ],
+    "test_loss": 2.035596696249979,
+    "test_perplexity": 7.65681955817527,
+    "best_val_loss": 1.5239858573737974,
+    "best_val_perplexity": 4.5904858005596525,
+    "final_train_loss": 0.4094096794051815,
+    "final_val_loss": 2.1110103845005073
+}

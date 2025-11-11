@@ -1,0 +1,17 @@
+{
+    "underfit": {
+        "test_loss": 1.3128156695244702,
+        "test_perplexity": 3.7166237776454443,
+        "model_path": "models/underfit/best_model.pt"
+    },
+    "overfit": {
+        "test_loss": 1.4043941390640013,
+        "test_perplexity": 4.073058286666989,
+        "model_path": "models/overfit/best_model.pt"
+    },
+    "best_fit": {
+        "test_loss": 1.4662299798426242,
+        "test_perplexity": 4.332869306059727,
+        "model_path": "models/best_fit/best_model.pt"
+    }
+}
