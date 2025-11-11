@@ -144,15 +144,15 @@ python src/visualize.py
 
 ## 📈 Results
 
-### Test Perplexity Comparison
+### Test Perplexity Comparison for LSTM Architecture
 
 | Scenario | Test Perplexity | Test Loss |
-|----------|----------------|-----------|
-| Underfit | TBD | TBD |
-| Overfit | TBD | TBD |
-| Best Fit | TBD | TBD |
+|----------|-----------------|-----------|
+| Underfit | 3.72            | 1.3128    |
+| Overfit  | 4.07            | 1.4044    |
+| Best Fit | 4.33            | 1.4662    |
 
-*Note: Results will be updated after training*
+Summary: The underfit configuration achieved the lowest test perplexity (3.72) on this evaluation run.
 
 ### Training Curves
 
