@@ -162,7 +162,7 @@ Possible reasons why this can happen include:
 - **Dataset / split variability:** small differences in training/validation/test splits or leakage can change relative performance.
 - **Checkpoint selection:** using a non-representative checkpoint (e.g., early or late snapshot) may affect reported test metrics.
 - **Hyperparameter interactions:** learning rate, batch size, weight decay, and early stopping can interact in non-obvious ways and lead to unexpected behaviour.
-
+- **Number of Epochs:** An insufficient number of training epochs in the best_fit or underfit models may be contributing to the observed performance differences.
 
 ### Training Curves
 
